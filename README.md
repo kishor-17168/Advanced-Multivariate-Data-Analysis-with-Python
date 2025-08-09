@@ -4,7 +4,7 @@
 
 ## Table of Contents
 1. [Introduction](#1--introduction)
-2. Tools used in this Assignment
+2. [Tools used in this Assignment](2--tools-used-in-this-assignment)
 3. Problem-1: PCA Analysis
 
 
@@ -14,3 +14,16 @@ This repository contains the completed assignment for the course **Advanced Mult
 The tasks include practical implementations of methods such as **Principal Component Analysis (PCA)**, **Canonical Correlation Analysis (CCA)**, **Factor Analysis**, **DBSCAN clustering**, **Multidimensional Scaling (MDS)**, and **Correspondence Analysis**. Each problem is solved using relevant datasets, with step-by-step coding, visualization, and interpretation of results.  
 
 The assignment aims to reinforce theoretical concepts through computational practice, enhance analytical skills, and develop proficiency in applying multivariate techniques to real-world data scenarios.
+
+
+## 2- Tools used in this Assignment
+The following tools and libraries were used to complete the tasks in this assignment:
+
+- **Jupyter Notebook** – Interactive environment for writing and executing Python code, documenting workflows, and visualizing results.
+- **NumPy** – For efficient numerical computations and array manipulations.
+- **Pandas** – For data manipulation, cleaning, and handling tabular datasets.
+- **Matplotlib** – For creating basic data visualizations.
+- **Seaborn** – For advanced and aesthetically pleasing statistical plots.
+- **Scikit-learn** – For implementing machine learning algorithms such as PCA, DBSCAN, and MDS.
+- **FactorAnalyzer** – For conducting factor analysis and related statistical methods.
+
