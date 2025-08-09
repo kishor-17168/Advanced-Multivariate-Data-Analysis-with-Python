@@ -44,7 +44,7 @@ In this analysis, a sample dataset with features—Height, Weight, and Age—was
 - **Visualization:** Scatter plots were generated to compare the data distribution before and after PCA, showing how PCA projects data into a lower-dimensional space while preserving class separation.
 
 This process demonstrates how PCA can simplify the feature space while maintaining important information for classification tasks.
-The full code is available in the [Problem-1_PCA_analysis.ipynb](Problem-1_PCA%20analysis.ipynb) file.
+The full code is available in the [Problem-1_PCA_analysis.ipynb](Problem-1_PCA analysis.ipynb) file.
 
 
 
