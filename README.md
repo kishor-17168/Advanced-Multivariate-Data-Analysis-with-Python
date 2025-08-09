@@ -222,3 +222,106 @@ This factor analysis simplified the Iris dataset into one meaningful latent fact
 The full code is available in the [Problem-6_Factor Analysis with Iris data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-6_Factor%20Analysis%20with%20Iris%20data.ipynb) file.
 
 
+
+## 9- DBSCAN using python
+**DBSCAN (Density-Based Spatial Clustering of Applications with Noise)** is an unsupervised clustering algorithm that groups together points that are closely packed while marking points in low-density regions as outliers or noise.
+
+**Key Features:**
+
+- **Density-based:** Clusters are formed based on areas of high point density.
+- **No need to specify number of clusters:** Unlike k-means, DBSCAN does not require predefining the number of clusters.
+- **Handles noise:** Effectively identifies outliers as noise points.
+- **Clusters can have arbitrary shape:** Can find clusters of various shapes and sizes.
+
+**When to use DBSCAN:**
+
+- When you expect clusters to have irregular shapes.
+- When your dataset contains noise or outliers.
+- When you do not want to specify the number of clusters beforehand.
+
+
+In this analysis, we applied the DBSCAN clustering algorithm to a synthetic dataset generated with two interleaving half circles ("moons"). 
+
+- **Data Preparation:**  
+  We generated 300 samples with some noise and standardized the features using `StandardScaler` to ensure all features contribute equally.
+
+- **DBSCAN Application:**  
+  DBSCAN was run with parameters `eps=0.3` (neighborhood radius) and `min_samples=5` (minimum points to form a dense region).
+
+- **Results Visualization:**
+<br> ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-7_output.png)<br>
+  The clusters assigned by DBSCAN were visualized in a scatter plot with different colors representing different clusters. Points labeled `-1` represent noise or outliers.
+
+- **Insights:**  
+  DBSCAN effectively identified the two distinct moon-shaped clusters and separated noise points, demonstrating its ability to find arbitrarily shaped clusters and handle noise.
+
+The full code is available in the [Problem-7_DBSCAN using python.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-7_DBSCAN%20using%20python.ipynb) file.
+
+
+
+
+## 10- Multidimensional Scaling with Iris dataset
+
+Multidimensional Scaling (MDS) is a dimensionality reduction technique used to visualize the similarity or dissimilarity of data points in a lower-dimensional space. It aims to preserve the pairwise distances between points as much as possible while projecting high-dimensional data into 2D or 3D for easier interpretation.
+
+**When to use MDS:**  
+- To explore and visualize the structure of complex datasets.  
+- When you want to represent the similarity or dissimilarity (distance) between samples.  
+- Useful in fields like psychology, ecology, and marketing to interpret relationships among objects or variables.
+
+
+This analysis applies Multidimensional Scaling (MDS) to the Iris dataset to visualize its structure in two dimensions while preserving the pairwise Euclidean distances between samples.
+
+**Key Points:**
+<br> ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-8_output.png) <br> 
+
+- The original 4-dimensional Iris data was transformed into 2D coordinates using MDS.
+- A scatter plot of the two MDS dimensions shows clear clustering by species (setosa, versicolor, virginica).
+- This visualization helps reveal the natural grouping and similarity patterns among the different Iris species based on their measured features.
+
+MDS effectively reduces dimensionality and provides an interpretable visual summary of complex, high-dimensional data.<br>
+<br>The full code is available in the [Problem-8_Multidimensional Scaling with Iris dataset.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-8_Multidimensional%20Scaling%20with%20Iris%20dataset.ipynb) file.<br>
+
+
+
+## 11- Correspondence Analysis with USArrests dataset
+
+Correspondence Analysis is a multivariate statistical technique used to analyze and visualize relationships in categorical data, typically from contingency tables. It provides a way to explore associations between rows and columns by representing them as points in a low-dimensional space.
+
+**When to Use:**  
+- To examine relationships between two categorical variables.  
+- To visualize patterns in frequency or count data.  
+- When you want to reduce dimensionality and interpret associations in a contingency table.
+
+CA helps reveal underlying structures and clusters by projecting categories into a simplified graphical form, making complex categorical relationships easier to understand.
+
+### Correspondence Analysis with USArrests Dataset
+
+This analysis applied Correspondence Analysis (CA) on the USArrests dataset to explore relationships between US states and crime variables.
+
+**Key Findings:**
+
+**Eigenvalues & Variance Explained:**
+  ```python
+# Eigenvalues (explained inertia)
+eigenvalues = ca.eigenvalues_
+print("Eigenvalues:", eigenvalues)
+# Output:
+# Eigenvalues: [0.04501357 0.00606546]
+``` 
+  The first two dimensions have eigenvalues of approximately 0.045 and 0.006, respectively, indicating the amount of explained inertia (variance) by each dimension.
+
+- **Row and Column Coordinates:**  
+  - Row coordinates represent the positions of states in the reduced 2D space.  
+  - Column coordinates represent crime variables (Murder, Assault, UrbanPop, Rape).
+
+- **Biplot Interpretation:**
+<br> ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-9_output.png) <br>
+  - States (blue dots) and variables (red crosses) positioned close together indicate strong associations.  
+  - For example, *UrbanPop* and *Assault* are near states like Massachusetts and New Jersey, suggesting higher urbanization and assault rates there.  
+  - *Murder* is closer to southern states such as Georgia, Tennessee, and Louisiana, showing stronger association with this crime.  
+  - *Rape* aligns near Nevada and Colorado, indicating higher occurrence in these states.
+
+The CA biplot reveals patterns of similarity among states and highlights which crime types are more prevalent in specific regions, helping to understand the multivariate relationships in the dataset.
+
+<br>The full code is available in the [Problem-9_Correspondance Analysis with USArrests dataset.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-9_Correspondance%20Analysis%20with%20USArrests%20dataset.ipynb) file.<br>
