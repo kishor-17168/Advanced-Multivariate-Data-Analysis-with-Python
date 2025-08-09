@@ -3,7 +3,7 @@
 
 
 ## Table of Contents
-1. [Introduction](1--introduction)
+1. [Introduction](#1--introduction)
 2. Tools used in this Assignment
 3. Problem-1: PCA Analysis
 
