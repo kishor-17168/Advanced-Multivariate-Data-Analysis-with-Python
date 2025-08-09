@@ -5,7 +5,7 @@
 ## Table of Contents
 1. [Introduction](#1--introduction)
 2. [Tools used in this Assignment](#2--tools-used-in-this-assignment)
-3. Problem-1: PCA Analysis(#3--principle-component-analysis(pca))
+3. [Problem-1: PCA Analysis](#3--principle-component-analysispca)
 
 
 ## 1- Introduction
