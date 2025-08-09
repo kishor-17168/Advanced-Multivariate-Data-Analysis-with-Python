@@ -155,3 +155,70 @@ The full code is available in the [Problem-4_Factor analysis with student stress
 
 
 
+## 7- Factor analysis with Mtcars data
+This analysis applied Factor Analysis to the mtcars dataset, which contains multiple numeric variables related to car attributes.
+
+**Key Findings:**
+
+- **Data Suitability:**
+```python
+# Suitability tests
+ kmo_all, kmo_model = calculate_kmo(X)
+ chi_square_value, p_value = calculate_bartlett_sphericity(X)
+ print(f"KMO: {kmo_model:.3f}  |  Bartlett's p-value: {p_value:.5f}")
+ KMO: 0.846  |  Bartlett's p-value: 0.0000
+```
+  The Kaiser-Meyer-Olkin (KMO) measure was 0.846, indicating good sampling adequacy. Bartlett’s test was highly significant (p < 0.001), confirming that the dataset is appropriate for factor analysis.
+
+- **Factor Selection:**
+![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-5.1_output.png)<br>
+
+The scree plot and eigenvalues suggested two main factors with eigenvalues greater than 1, which were retained for further analysis.
+
+- **Factor Loadings and Interpretation:**
+<br> ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-5.2_output.png) <br>
+
+  - *Factor 1* loads positively on horsepower (hp), carburetors (carb), cylinders (cyl), and displacement (disp), and negatively on miles per gallon (mpg), quarter mile time (qsec), and engine shape (vs). This factor represents **Engine Size and Power versus Fuel Efficiency**—larger, more powerful engines tend to have lower fuel efficiency.  
+  - *Factor 2* loads positively on transmission type (am), number of gears (gear), and rear axle ratio (drat), and negatively on weight (wt) and displacement (disp). This factor reflects **Performance and Transmission Type**, capturing lighter, sportier cars with manual transmissions and higher gear counts.
+
+- **Variance Explained:**  
+  Factor 1 explains 41.6% of the variance, Factor 2 explains 37.2%, and together they account for 78.8% of the total variability, summarizing most of the important patterns in the data.
+
+This factor analysis effectively reduced the dimensionality of the mtcars dataset into two meaningful latent factors, aiding in the interpretation of the underlying car characteristics.<br>
+
+The full code is available in the [Problem-5_Factor analysis with Mtcars data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-5_Factor%20analysis%20with%20Mtcars%20data.ipynb) file.
+
+
+
+
+## 8- Problem-6_Factor Analysis with Iris data
+This analysis performed Factor Analysis on the Iris dataset, which contains measurements of different flower attributes.
+
+**Key Findings:**
+
+- **Data Suitability:**
+```python
+# Suitability tests
+ kmo_all, kmo_model = calculate_kmo(X)
+ chi_square_value, p_value = calculate_bartlett_sphericity(X)
+ print(f"KMO: {kmo_model:.3f}  |  Bartlett's p-value: {p_value:.5f}")
+ KMO: 0.540  |  Bartlett's p-value: 0.00000
+```  
+  The Kaiser-Meyer-Olkin (KMO) measure was 0.540, indicating mediocre sampling adequacy. Bartlett’s test was highly significant (p < 0.001), confirming that factor analysis is appropriate despite the lower KMO.
+
+- **Factor Selection:**
+  <br>![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-6.1_output.png)<br>
+  <br>The scree plot and eigenvalues suggested retaining only one factor with an eigenvalue greater than 1.<br>
+
+- **Factor Loadings and Interpretation:**
+  ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-6.2_output.png) 
+<br>The single factor showed strong negative loadings on sepal length, petal length, and petal width, and a moderate positive loading on sepal width. This factor likely represents a general size or shape dimension of the flowers.<br>
+
+- **Variance Explained:**  
+  This factor explains approximately 69.2% of the total variance in the dataset, capturing most of the variability in the measurements.
+
+This factor analysis simplified the Iris dataset into one meaningful latent factor that summarizes the main variation in flower features.<br>
+
+The full code is available in the [Problem-6_Factor Analysis with Iris data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-6_Factor%20Analysis%20with%20Iris%20data.ipynb) file.
+
+
