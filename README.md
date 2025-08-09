@@ -343,5 +343,5 @@ The CA biplot reveals patterns of similarity among states and highlights which c
 
 
 
-##12- Conclusion 
+## 12- Conclusion 
 This analysis demonstrated the application of various multivariate techniques to explore and interpret complex datasets. Methods such as PCA, Canonical Correlation Analysis, Factor Analysis, DBSCAN clustering, and Multidimensional Scaling effectively reduced dimensionality, revealed underlying patterns, and identified meaningful relationships among variables. These approaches provide valuable insights for data-driven decision-making and further research.
