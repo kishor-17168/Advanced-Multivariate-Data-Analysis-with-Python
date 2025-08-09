@@ -27,7 +27,7 @@ The following tools and libraries were used to complete the tasks in this assign
 - **Scikit-learn** – For implementing machine learning algorithms such as PCA, DBSCAN, and MDS.
 - **FactorAnalyzer** – For conducting factor analysis and related statistical methods.
 
-Go back to table of Contents [here](#table-of-contents)
+
 ## 3- Principle Component Analysis(PCA)
 Principal Component Analysis (PCA) is a widely used dimensionality reduction technique in multivariate statistics. It transforms the original set of possibly correlated variables into a smaller set of uncorrelated variables known as principal components. These components are ordered such that the first captures the maximum possible variance in the data, the second captures the next highest variance orthogonal to the first, and so on. PCA is valuable for simplifying datasets, reducing noise, and enabling better visualization while preserving most of the important information in the original data.
 
@@ -47,7 +47,7 @@ This process demonstrates how PCA can simplify the feature space while maintaini
 
 ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-1_output.png)
 The full code is available in the [Problem-1_PCA_analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-1_PCA%20analysis.ipynb) file.
-
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 ## 4- Canonical Correlation analysis(CCA)
 Canonical Correlation Analysis (CCA) is a multivariate statistical technique used to identify and quantify the relationships between two sets of variables. It finds pairs of linear combinations—called canonical variates—from each variable set that are maximally correlated with each other. These canonical correlations help uncover shared patterns or associations between the two datasets.
@@ -71,6 +71,7 @@ The first canonical variate pair, with a correlation of approximately **51.2%**,
 The second canonical variate pair has a weaker correlation of about **35.3%**, corresponding to roughly **12%** (\(R^2 = 0.1243\)) shared variance, suggesting that it captures less of the common structure between the datasets compared to the first pair.<br>
 
 The full code is available in the [Problem-2_ Canonical Correlation analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-2_%20Canonical%20Correlation%20analysis.ipynb) file.
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -101,6 +102,7 @@ This visualization helps in understanding the strength and direction of relation
 ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-3_output.png) <br>
 
 The full code is available in the [Problem-3_Visualizing Covariance matrix.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-3_Visualizing%20Covariance%20matrix.ipynb) file.
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -152,6 +154,7 @@ print(f"\nKMO: {kmo_model:.3f}   Bartlett p-value: {bartlett_p:.5f}")
 This analysis effectively reduced complex, correlated variables into two interpretable latent factors, aiding in understanding the dimensions underlying student stress.<br>
 
 The full code is available in the [Problem-4_Factor analysis with student stress data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-4_Factor%20analysis%20with%20student%20stress%20data.ipynb) file.
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -188,6 +191,7 @@ This factor analysis effectively reduced the dimensionality of the mtcars datase
 
 The full code is available in the [Problem-5_Factor analysis with Mtcars data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-5_Factor%20analysis%20with%20Mtcars%20data.ipynb) file.
 
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -220,6 +224,7 @@ This analysis performed Factor Analysis on the Iris dataset, which contains meas
 This factor analysis simplified the Iris dataset into one meaningful latent factor that summarizes the main variation in flower features.<br>
 
 The full code is available in the [Problem-6_Factor Analysis with Iris data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-6_Factor%20Analysis%20with%20Iris%20data.ipynb) file.
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -256,6 +261,7 @@ In this analysis, we applied the DBSCAN clustering algorithm to a synthetic data
   DBSCAN effectively identified the two distinct moon-shaped clusters and separated noise points, demonstrating its ability to find arbitrarily shaped clusters and handle noise.
 
 The full code is available in the [Problem-7_DBSCAN using python.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-7_DBSCAN%20using%20python.ipynb) file.
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -281,6 +287,7 @@ This analysis applies Multidimensional Scaling (MDS) to the Iris dataset to visu
 
 MDS effectively reduces dimensionality and provides an interpretable visual summary of complex, high-dimensional data.<br>
 <br>The full code is available in the [Problem-8_Multidimensional Scaling with Iris dataset.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-8_Multidimensional%20Scaling%20with%20Iris%20dataset.ipynb) file.<br>
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
 
@@ -325,3 +332,4 @@ print("Eigenvalues:", eigenvalues)
 The CA biplot reveals patterns of similarity among states and highlights which crime types are more prevalent in specific regions, helping to understand the multivariate relationships in the dataset.
 
 <br>The full code is available in the [Problem-9_Correspondance Analysis with USArrests dataset.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-9_Correspondance%20Analysis%20with%20USArrests%20dataset.ipynb) file.<br>
+<br>Go back to **Table of Contents** [here](#table-of-contents)<br>
