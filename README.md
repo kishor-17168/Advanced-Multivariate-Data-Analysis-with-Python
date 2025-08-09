@@ -43,8 +43,115 @@ In this analysis, a sample dataset with features—Height, Weight, and Age—was
 - **Model Evaluation:** The model’s performance was evaluated on the test set using a confusion matrix, visualized with a heatmap.
 - **Visualization:** Scatter plots were generated to compare the data distribution before and after PCA, showing how PCA projects data into a lower-dimensional space while preserving class separation.
 
-This process demonstrates how PCA can simplify the feature space while maintaining important information for classification tasks.
+This process demonstrates how PCA can simplify the feature space while maintaining important information for classification tasks.<br>
+
+![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-1_output.png)
 The full code is available in the [Problem-1_PCA_analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-1_PCA%20analysis.ipynb) file.
+
+
+## 4- Canonical Correlation analysis(CCA)
+Canonical Correlation Analysis (CCA) is a multivariate statistical technique used to identify and quantify the relationships between two sets of variables. It finds pairs of linear combinations—called canonical variates—from each variable set that are maximally correlated with each other. These canonical correlations help uncover shared patterns or associations between the two datasets.
+
+**When to Use:**  
+CCA is useful when you want to explore the relationship between two different sets of variables measured on the same samples. It is commonly applied in fields like psychology, genomics, and social sciences, where understanding the interplay between multiple variable groups is essential.
+
+In this analysis, synthetic datasets representing psychological scores (X) and physiological scores (Y) were created with multiple variables. The goal was to explore the relationships between these two variable groups using Canonical Correlation Analysis (CCA).
+
+Key steps included:
+- Generating and standardizing two datasets with correlated variables.
+- Applying CCA to find pairs of canonical variates (linear combinations) from each dataset that maximize their correlation.
+- Visualizing the first pair of canonical variates with a scatter plot to observe their association.
+- Calculating canonical correlation coefficients, which quantify the strength of the relationships between the pairs of canonical variates.
+
+The resulting canonical correlations were approximately 0.51 and 0.35 for the first two canonical variate pairs, indicating moderate associations between the psychological and physiological variables. This demonstrates how CCA can uncover underlying connections between two multivariate datasets.
+
+![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-2_output.png) <br>
+The canonical correlation analysis yielded two canonical correlations: **0.5118** and **0.3526**.  
+The first canonical variate pair, with a correlation of approximately **51.2%**, represents the strongest relationship between the two variable sets, indicating that about **26%** (\(R^2 = 0.2619\)) of the variance in one canonical variate is explained by the other.  
+The second canonical variate pair has a weaker correlation of about **35.3%**, corresponding to roughly **12%** (\(R^2 = 0.1243\)) shared variance, suggesting that it captures less of the common structure between the datasets compared to the first pair.<br>
+
+The full code is available in the [Problem-2_ Canonical Correlation analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-2_%20Canonical%20Correlation%20analysis.ipynb) file.
+
+
+
+## 5- Visualizing Covariance matrix
+### What is a Covariance Matrix?
+A covariance matrix shows how pairs of variables vary together:
+
+* Positive covariance → variables increase together
+
+* Negative covariance → one increases, the other decreases
+
+* Zero covariance → variables are uncorrelated
+
+It helps understand relationships between multiple variables.
+
+**Iris dataset from seaborn is used**
+
+This analysis involved computing and visualizing the covariance matrix of the well-known Iris dataset, focusing on its numeric features: sepal length, sepal width, petal length, and petal width.  
+
+The covariance matrix quantifies how pairs of variables vary together:  
+- Positive covariance indicates variables increase or decrease together.  
+- Negative covariance indicates one variable increases while the other decreases.  
+- Values near zero indicate little or no linear relationship.  
+
+A heatmap was used to visualize these covariances, where red cells represent positive relationships and blue cells indicate negative relationships. Notably, petal length and sepal length exhibit a strong positive covariance (1.27), while sepal width and petal length show a negative covariance (-0.33). The diagonal elements represent variances, with petal length having the highest variance (3.12), reflecting its wide range of values.
+
+This visualization helps in understanding the strength and direction of relationships among variables, which is critical for multivariate data analysis.
+![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-3_output.png) <br>
+
+The full code is available in the [Problem-3_Visualizing Covariance matrix.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-3_Visualizing%20Covariance%20matrix.ipynb) file.
+
+
+
+
+## 6- Factor analysis with student stress data
+Factor Analysis is a multivariate statistical technique used to identify underlying latent factors that explain the patterns of correlations among observed variables. It assumes that observed variables are influenced by a smaller number of unobserved factors, which capture the shared variance.
+
+The main objectives of Factor Analysis are to reduce dimensionality, detect structure in the relationships between variables, and identify latent constructs that may not be directly measured.
+
+Factor Analysis is widely applied in fields such as psychology, social sciences, and marketing research, where complex data can be summarized by a few meaningful factors.
+
+**When to Use:**  
+Use Factor Analysis when you want to explore underlying dimensions or constructs in a dataset with many correlated variables, especially when those factors are not directly observable. It is particularly useful for data reduction and for developing theoretical models based on latent variables.
+
+This analysis applied Factor Analysis to a student stress dataset containing 21 variables related to psychological, physical, and social factors affecting stress levels.
+
+**Key Steps and Findings:**
+
+- **Data Suitability:**
+```python
+# Suitability tests
+kmo_all, kmo_model = calculate_kmo(X)
+chi_square_value, bartlett_p = calculate_bartlett_sphericity(X)
+print(f"\nKMO: {kmo_model:.3f}   Bartlett p-value: {bartlett_p:.5f}")
+
+# Output:
+# KMO: 0.968   Bartlett p-value: 0.00000
+```
+ 
+  The Kaiser-Meyer-Olkin (KMO) measure was excellent at 0.968, and Bartlett’s test was highly significant (p < 0.001), confirming the dataset’s suitability for factor analysis.
+
+- **Factor Selection:**
+  ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-4_output.png)
+  
+  - The scree plot and eigenvalues indicated two meaningful factors explaining most variance.
+
+- **Factor Loadings and Interpretation:**
+  ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-4.1_output.png)
+  
+  - *Factor 1 ("Psychological & Social Stress")* explains 49.24% of variance and is characterized by high positive loadings on anxiety, depression, bullying, peer pressure, and future career concerns, with strong negative loadings on self-esteem, sleep quality, safety, academic performance, and teacher-student relationship. This factor represents overall mental and emotional well-being.  
+  - *Factor 2 ("Physical Health & Social Support")* explains 13.80% of variance and relates strongly to blood pressure and social support, capturing physical health and perceived social support dynamics.
+
+- **Variance Explained:**  
+  Together, the two factors explain approximately 63.05% of the variance, which is considered strong for social science data.
+
+- **Factor Scores:**  
+  Each participant’s scores on these latent factors indicate their relative standing. For example, Participant 0 showed slightly higher psychological stress but lower physical health/social support issues, whereas Participant 1 showed high stress on both factors.
+
+This analysis effectively reduced complex, correlated variables into two interpretable latent factors, aiding in understanding the dimensions underlying student stress.<br>
+
+The full code is available in the [Problem-4_Factor analysis with student stress data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-4_Factor%20analysis%20with%20student%20stress%20data.ipynb) file.
 
 
 
