@@ -27,7 +27,7 @@ The following tools and libraries were used to complete the tasks in this assign
 - **Scikit-learn** – For implementing machine learning algorithms such as PCA, DBSCAN, and MDS.
 - **FactorAnalyzer** – For conducting factor analysis and related statistical methods.
 
-
+Go back to table of Contents [here](#table-of-contents)
 ## 3- Principle Component Analysis(PCA)
 Principal Component Analysis (PCA) is a widely used dimensionality reduction technique in multivariate statistics. It transforms the original set of possibly correlated variables into a smaller set of uncorrelated variables known as principal components. These components are ordered such that the first captures the maximum possible variance in the data, the second captures the next highest variance orthogonal to the first, and so on. PCA is valuable for simplifying datasets, reducing noise, and enabling better visualization while preserving most of the important information in the original data.
 
