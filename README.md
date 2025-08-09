@@ -12,6 +12,9 @@
 7. [Problem-5: Factor analysis with Mtcars data](#7--factor-analysis-with-mtcars-data)
 8. [Problem-6: Factor Analysis with Iris data](#8--factor-analysis-with-iris-data)
 9. [Problem-7: DBSCAN using python](#9--dbscan-using-python)
+10. [Problem-8: Multidimensional Scaling with Iris dataset](#10--multidimensional-scaling-with-iris-dataset)
+11. [Problem-9: Correspondence Analysis with USArrests dataset](#11--correspondence-analysis-with-usarrests-dataset)
+12. [Conclusion](#12--conclusion)
 ## 1- Introduction
 This repository contains the completed assignment for the course **Advanced Multivariate Techniques**. The primary objective of this assignment is to apply and demonstrate various multivariate statistical methods using Python, based on the topics covered in the course.  
 
@@ -337,3 +340,8 @@ The CA biplot reveals patterns of similarity among states and highlights which c
 
 <br>The full code is available in the [Problem-9_Correspondance Analysis with USArrests dataset.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-9_Correspondance%20Analysis%20with%20USArrests%20dataset.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
+
+
+
+##12- Conclusion 
+This analysis demonstrated the application of various multivariate techniques to explore and interpret complex datasets. Methods such as PCA, Canonical Correlation Analysis, Factor Analysis, DBSCAN clustering, and Multidimensional Scaling effectively reduced dimensionality, revealed underlying patterns, and identified meaningful relationships among variables. These approaches provide valuable insights for data-driven decision-making and further research.
