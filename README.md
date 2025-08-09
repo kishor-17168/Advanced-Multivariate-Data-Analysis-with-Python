@@ -124,7 +124,8 @@ Factor Analysis is widely applied in fields such as psychology, social sciences,
 **When to Use:**  
 Use Factor Analysis when you want to explore underlying dimensions or constructs in a dataset with many correlated variables, especially when those factors are not directly observable. It is particularly useful for data reduction and for developing theoretical models based on latent variables.
 
-This analysis applied Factor Analysis to a student stress dataset containing 21 variables related to psychological, physical, and social factors affecting stress levels.
+This analysis applied Factor Analysis to a student stress dataset containing 21 variables related to psychological, physical, and social factors affecting stress levels.<br>
+Dataset used [Student stress data](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/StressLevelDataset.csv)
 
 **Key Steps and Findings:**
 
