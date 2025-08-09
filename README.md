@@ -46,7 +46,7 @@ In this analysis, a sample dataset with features—Height, Weight, and Age—was
 This process demonstrates how PCA can simplify the feature space while maintaining important information for classification tasks.<br>
 
 ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-1_output.png)
-The full code is available in the [Problem-1_PCA_analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-1_PCA%20analysis.ipynb) file.
+The full code is available in the [Problem-1_PCA_analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-1_PCA%20analysis.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 ## 4- Canonical Correlation analysis(CCA)
@@ -70,7 +70,7 @@ The canonical correlation analysis yielded two canonical correlations: **0.5118*
 The first canonical variate pair, with a correlation of approximately **51.2%**, represents the strongest relationship between the two variable sets, indicating that about **26%** (\(R^2 = 0.2619\)) of the variance in one canonical variate is explained by the other.  
 The second canonical variate pair has a weaker correlation of about **35.3%**, corresponding to roughly **12%** (\(R^2 = 0.1243\)) shared variance, suggesting that it captures less of the common structure between the datasets compared to the first pair.<br>
 
-The full code is available in the [Problem-2_ Canonical Correlation analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-2_%20Canonical%20Correlation%20analysis.ipynb) file.
+The full code is available in the [Problem-2_ Canonical Correlation analysis.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-2_%20Canonical%20Correlation%20analysis.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
@@ -101,7 +101,7 @@ A heatmap was used to visualize these covariances, where red cells represent pos
 This visualization helps in understanding the strength and direction of relationships among variables, which is critical for multivariate data analysis.
 ![Alt Text](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/prob-3_output.png) <br>
 
-The full code is available in the [Problem-3_Visualizing Covariance matrix.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-3_Visualizing%20Covariance%20matrix.ipynb) file.
+The full code is available in the [Problem-3_Visualizing Covariance matrix.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-3_Visualizing%20Covariance%20matrix.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
@@ -153,7 +153,7 @@ print(f"\nKMO: {kmo_model:.3f}   Bartlett p-value: {bartlett_p:.5f}")
 
 This analysis effectively reduced complex, correlated variables into two interpretable latent factors, aiding in understanding the dimensions underlying student stress.<br>
 
-The full code is available in the [Problem-4_Factor analysis with student stress data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-4_Factor%20analysis%20with%20student%20stress%20data.ipynb) file.
+The full code is available in the [Problem-4_Factor analysis with student stress data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-4_Factor%20analysis%20with%20student%20stress%20data.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
@@ -189,7 +189,7 @@ The scree plot and eigenvalues suggested two main factors with eigenvalues great
 
 This factor analysis effectively reduced the dimensionality of the mtcars dataset into two meaningful latent factors, aiding in the interpretation of the underlying car characteristics.<br>
 
-The full code is available in the [Problem-5_Factor analysis with Mtcars data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-5_Factor%20analysis%20with%20Mtcars%20data.ipynb) file.
+The full code is available in the [Problem-5_Factor analysis with Mtcars data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-5_Factor%20analysis%20with%20Mtcars%20data.ipynb) file.<br>
 
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
@@ -223,7 +223,7 @@ This analysis performed Factor Analysis on the Iris dataset, which contains meas
 
 This factor analysis simplified the Iris dataset into one meaningful latent factor that summarizes the main variation in flower features.<br>
 
-The full code is available in the [Problem-6_Factor Analysis with Iris data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-6_Factor%20Analysis%20with%20Iris%20data.ipynb) file.
+The full code is available in the [Problem-6_Factor Analysis with Iris data.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-6_Factor%20Analysis%20with%20Iris%20data.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
@@ -260,7 +260,7 @@ In this analysis, we applied the DBSCAN clustering algorithm to a synthetic data
 - **Insights:**  
   DBSCAN effectively identified the two distinct moon-shaped clusters and separated noise points, demonstrating its ability to find arbitrarily shaped clusters and handle noise.
 
-The full code is available in the [Problem-7_DBSCAN using python.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-7_DBSCAN%20using%20python.ipynb) file.
+The full code is available in the [Problem-7_DBSCAN using python.ipynb](https://github.com/kishor-17168/Advanced-Multivariate-Data-Analysis-with-Python/blob/main/Problem-7_DBSCAN%20using%20python.ipynb) file.<br>
 <br>Go back to **Table of Contents** [here](#table-of-contents)<br>
 
 
