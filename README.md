@@ -6,8 +6,12 @@
 1. [Introduction](#1--introduction)
 2. [Tools used in this Assignment](#2--tools-used-in-this-assignment)
 3. [Problem-1: PCA Analysis](#3--principle-component-analysispca)
-
-
+4. [Problem-2: Canonical Correlation analysis(CCA)](#4--canonical-correlation-analysiscca)
+5. [Problem-3: Visualizing Covariance matrix](#5--visualizing-covariance-matrix)
+6. [Problem-4: Factor analysis with student stress data](#6--factor-analysis-with-student-stress-data)
+7. [Problem-5: Factor analysis with Mtcars data](#7--factor-analysis-with-mtcars-data)
+8. [Problem-6: Factor Analysis with Iris data](#8--factor-analysis-with-iris-data)
+9. [Problem-7: DBSCAN using python](#9--dbscan-using-python)
 ## 1- Introduction
 This repository contains the completed assignment for the course **Advanced Multivariate Techniques**. The primary objective of this assignment is to apply and demonstrate various multivariate statistical methods using Python, based on the topics covered in the course.  
 
@@ -195,7 +199,7 @@ The full code is available in the [Problem-5_Factor analysis with Mtcars data.ip
 
 
 
-## 8- Problem-6_Factor Analysis with Iris data
+## 8- Factor Analysis with Iris data
 This analysis performed Factor Analysis on the Iris dataset, which contains measurements of different flower attributes.
 
 **Key Findings:**
