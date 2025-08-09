@@ -27,3 +27,24 @@ The following tools and libraries were used to complete the tasks in this assign
 - **Scikit-learn** – For implementing machine learning algorithms such as PCA, DBSCAN, and MDS.
 - **FactorAnalyzer** – For conducting factor analysis and related statistical methods.
 
+
+## 3- Principle Component Analysis(PCA)
+Principal Component Analysis (PCA) is a widely used dimensionality reduction technique in multivariate statistics. It transforms the original set of possibly correlated variables into a smaller set of uncorrelated variables known as principal components. These components are ordered such that the first captures the maximum possible variance in the data, the second captures the next highest variance orthogonal to the first, and so on. PCA is valuable for simplifying datasets, reducing noise, and enabling better visualization while preserving most of the important information in the original data.
+
+**When to Use:**  
+PCA is most useful when dealing with high-dimensional datasets, when multicollinearity exists among variables, or when a more compact representation is needed for visualization, pattern recognition, or as a preprocessing step before applying other machine learning algorithms.
+
+In this analysis, a sample dataset with features—Height, Weight, and Age—was used to predict Gender (binary: Male/Female). The key steps were:
+
+- **Data Preparation:** The dataset was created and converted into a pandas DataFrame. Features (Height, Weight, Age) were separated from the target variable (Gender).
+- **Feature Scaling:** StandardScaler was applied to standardize the features, ensuring equal weighting.
+- **Dimensionality Reduction:** PCA was performed to reduce the original three features into two principal components that capture the majority of variance.
+- **Model Training:** Logistic Regression was trained on the PCA-transformed training data to classify Gender.
+- **Model Evaluation:** The model’s performance was evaluated on the test set using a confusion matrix, visualized with a heatmap.
+- **Visualization:** Scatter plots were generated to compare the data distribution before and after PCA, showing how PCA projects data into a lower-dimensional space while preserving class separation.
+
+This process demonstrates how PCA can simplify the feature space while maintaining important information for classification tasks.
+The full code is available in the [Problem-1_PCA_analysis.ipynb](Problem-1_PCA%20analysis.ipynb) file.
+
+
+
